@@ -19,15 +19,10 @@ export const useCartStore = defineStore('cartstore',  {
   actions: {
     addproductToCart (product)  {
       this.cart.push(product);
-      console.log(cart.value, 'cart');
   },
-  
-
   removeProductFromCart  (id) {
-    this.cart = cart.filter((e) => {
-        console.log(e , 'e', id);
-      return   e.id === id
-    })
+    console.log(id, 'idd');
+   this.cart = this.cart.filter((e) =>  e.id !== id)
 }
 
   },

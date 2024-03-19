@@ -66,7 +66,6 @@ const totalAmount = computed(() => cartStore.total);
 const removeFromCart = (id) => {
   console.log(id);
   cartStore.removeProductFromCart(id);
-  console.log();
 };
 
 const placeOrders = () => {
